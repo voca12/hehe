@@ -3,22 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e68c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff6347;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        #name {
+            display: none;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff6347;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #ff4500;
+        }
+    </style>
 </head>
 <body>
+
     <div class="container">
-        <h1 id="greeting">Happy Birthday!! </h1>
-        <h2 id="name">For Ibuk, From Barra Advaya.</h2>
-        <p>Today is a special day, I'm sorry that i can't give something you want. But i hope you will like this one. — Barra Advaya</p>
-        <button id="revealName">Klik untuk mengetahui siapa yang ulang tahun!</button>
+        <h1>Selamat Ulang Tahun!</h1>
+        <p>Semoga semua impianmu menjadi kenyataan dan hidupmu penuh dengan kebahagiaan!</p>
+        
+        <div id="name">Ibuk 🎉</div>
+        
+        <div class="button-container">
+            <button id="revealName" class="btn">Tampilkan Nama</button>
+            <button id="hideName" class="btn" style="display: none;">Sembunyikan Nama</button>
+        </div>
     </div>
-    <div class="button">
-        <button>
-            <a href="hehe.html">Next:3</a>
-        </button>
-    </div>
-    <script src="reveal.js"></script>
+
+    <script>
+        document.getElementById("revealName").addEventListener("click", function() {
+            var name = prompt("Masukkan nama yang berulang tahun:");
+            if (name) {
+                document.getElementById("name").textContent = name + " 🎉";
+                document.getElementById("name").style.display = "block";
+                document.getElementById("revealName").style.display = "none";
+                document.getElementById("hideName").style.display = "inline-block";
+            }
+        });
+
+        document.getElementById("hideName").addEventListener("click", function() {
+            document.getElementById("name").style.display = "none";
+            document.getElementById("revealName").style.display = "inline-block";
+            document.getElementById("hideName").style.display = "none";
+        });
+    </script>
+    
 </body>
 </html>
