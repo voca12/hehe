@@ -78,8 +78,11 @@
             }
         });
 
-        document.getElementById("goToHehe").addEventListener("click", function() {
-            window.location.href = "hehe.html"; // Mengarahkan ke hehe.html
+        document.getElementById("hideName").addEventListener("click", function() {
+            document.getElementById("name").style.display = "none";
+            document.getElementById("revealName").style.display = "inline-block";
+            document.getElementById("hideName").style.display = "none";
+           }
         });
     </script>
     
