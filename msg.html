@@ -74,12 +74,16 @@
                 document.getElementById("name").textContent = Ibuk + " 🎉";
                 document.getElementById("name").style.display = "block";
                 document.getElementById("revealName").style.display = "none";
-                document.getElementById("goToHehe").style.display = "inline-block";
+                document.getElementById("goToHehe").style.display = "inline-block";   
+            } else {
+                // Jika salah, tampilkan pesan kesalahan
+                alert("Nama yang dimasukkan salah! Silakan coba lagi.");
             }
         });
 
+        // Event ketika tombol "goToHehe" ditekan
         document.getElementById("goToHehe").addEventListener("click", function() {
-            window.location.href = "hehe.html"; // Mengarahkan ke hehe.html
+            window.location.href = "hehe.html";  // Mengarahkan ke hehe.html
         });
     </script>
     
