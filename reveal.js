@@ -1,5 +1,5 @@
 document.getElementById("revealName").addEventListener("click", function() {
-    var name = prompt("Masukkan nama orang yang berulang tahun:");
+    var name = prompt("Happy Birthday, Ibuk!:");
     if (name) {
         document.getElementById("name").textContent = Ibuk + " 🎉";
         document.getElementById("name").style.display = "block";
