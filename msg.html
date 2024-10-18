@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Ulang Tahun!</title>
+    <title>Happy Birthday!!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -56,32 +56,30 @@
 <body>
 
     <div class="container">
-        <h1>Selamat Ulang Tahun!</h1>
-        <p>Semoga semua impianmu menjadi kenyataan dan hidupmu penuh dengan kebahagiaan!</p>
+        <h1>Happy Birthday, Ibuk.</h1>
+        <p>i'm sorry that i can't give you something that you want, but i hope you will like this one. — Barra Advaya.</p>
         
         <div id="name">Ibuk 🎉</div>
         
         <div class="button-container">
-            <button id="revealName" class="btn">Tampilkan Nama</button>
-            <button id="hideName" class="btn" style="display: none;">Sembunyikan Nama</button>
+            <button id="revealName" class="btn">It's your birthday.</button>
+            <button id="goToHehe" class="btn" style="display: none;">Surprise-nya ada di next hehe.</button>
         </div>
     </div>
 
     <script>
         document.getElementById("revealName").addEventListener("click", function() {
-            var name = prompt("Masukkan nama yang berulang tahun:");
+            var name = prompt("Happy Birthday, Ibuk!");
             if (name) {
-                document.getElementById("name").textContent = name + " 🎉";
+                document.getElementById("name").textContent = Ibuk + " 🎉";
                 document.getElementById("name").style.display = "block";
                 document.getElementById("revealName").style.display = "none";
-                document.getElementById("hideName").style.display = "inline-block";
+                document.getElementById("goToHehe").style.display = "inline-block";
             }
         });
 
-        document.getElementById("hideName").addEventListener("click", function() {
-            document.getElementById("name").style.display = "none";
-            document.getElementById("revealName").style.display = "inline-block";
-            document.getElementById("hideName").style.display = "none";
+        document.getElementById("goToHehe").addEventListener("click", function() {
+            window.location.href = "hehe.html"; // Mengarahkan ke hehe.html
         });
     </script>
     
