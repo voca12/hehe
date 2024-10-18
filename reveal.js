@@ -3,6 +3,6 @@ document.getElementById("revealName").addEventListener("click", function() {
     if (name) {
         document.getElementById("name").textContent = Ibuk + " 🎉";
         document.getElementById("name").style.display = "block";
-        document.getElementById("revealName").style.display = "none";
+        document.getElementById("revealName").style.display = "Ibuk";
     }
 });
