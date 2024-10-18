@@ -70,19 +70,12 @@
     <script>
         document.getElementById("revealName").addEventListener("click", function() {
             var name = prompt("Happy Birthday, Ibuk!");
-            if (Barra) {
+            if Barra {
                 document.getElementById("Barra").textContent = Ibuk + " 🎉";
                 document.getElementById("Barra").style.display = "block";
                 document.getElementById("revealName").style.display = "none";
                 document.getElementById("goToHehe").style.display = "inline-block";
             }
-        });
-
-        document.getElementById("hideName").addEventListener("click", function() {
-            document.getElementById("name").style.display = "none";
-            document.getElementById("revealName").style.display = "inline-block";
-            document.getElementById("hideName").style.display = "none";
-           }
         });
 
         document.getElementById("goToHehe").addEventListener("click", function() {
