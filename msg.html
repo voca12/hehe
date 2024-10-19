@@ -61,26 +61,12 @@
         
         <div id="name">Ibuk 🎉</div>
         
-        <div class="button-container">
-            <button id="goToHehe" class="btn" style="display: inline-block;">Surprise-nya ada di next hehe :3</button>
+        <div class="button">
+            <a href = "hehe.html" ">Surprise-nya ada di next hehe :3</button>
         </div>
     </div>
 
-    <script>
-        document.getElementById("revealName").addEventListener("click", function() {
-            var name = prompt ("Input username disinii :");
-            if (name === "Barra") {
-                document.getElementById("name").textContent = Ibuk + " 🎉";
-                document.getElementById("name").style.display = "block";
-                document.getElementById("revealName").style.display = "none";
-                document.getElementById("goToHehe").style.display = "inline-block";   
-            } else {
-                // Jika salah, tampilkan pesan kesalahan
-                alert("Nama yang dimasukkan salah! Silakan coba lagi.");
-            }
-        });
-
-        // Event ketika tombol "goToHehe" ditekan
+    <script> 
         document.getElementById("goToHehe").addEventListener("click", function() {
             window.location.href = "hehe.html";  // Mengarahkan ke hehe.html
         });
